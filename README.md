@@ -1,11 +1,13 @@
-## Tailwind, react-router-dom, gh-pages already installed
+# Sample Hardhat Project
 
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
-## For gh-pages:
+Try running some of the following tasks:
 
-add in package.json: "homepage": "https://{github user name}.github.io/{repo name}",
-
-next step:
-in terminal: git remote add origin https://{github user name}.github.io/{repo name}.git
-
-### for deploying page: npm run deploy
+```shell
+npx hardhat help
+npx hardhat test
+GAS_REPORT=true npx hardhat test
+npx hardhat node
+npx hardhat run scripts/deploy.js
+```

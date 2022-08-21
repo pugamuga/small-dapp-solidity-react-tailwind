@@ -1,4 +1,3 @@
-
 const main = async () => {
   // Это фактически скомпилирует наш контракт и
   // создаст необходимые файлы для работы с
@@ -8,7 +7,6 @@ const main = async () => {
   );
 
   const hookahContract = await hookahContractFactory.deploy();
-
 
   console.log("Hookah Contract deployed to:", hookahContract.address);
 };

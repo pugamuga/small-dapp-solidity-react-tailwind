@@ -1,15 +1,31 @@
 const main = async () => {
-  // Это фактически скомпилирует наш контракт и
-  // создаст необходимые файлы для работы с
-  //  нашим контрактом в каталоге артефактов
+
   const hookahContractFactory = await hre.ethers.getContractFactory(
-    "HookahPortal"
+    "HookahPortalContract"
   );
 
-  const hookahContract = await hookahContractFactory.deploy();
+  const hookahContract = await hookahContractFactory.deploy({
+    value: hre.ethers.utils.parseEther("0.1"), // format of eth
+  });
 
   console.log("Hookah Contract deployed to:", hookahContract.address);
+
+  let contractBalance = await hre.ethers.provider.getBalance(hookahContract.address)
+
+  console.log("Contract balance is", hre.ethers.utils.formatEther(contractBalance) )
+
+  const HookahTxt = await hookahContract.buyHookah(
+    "This is hookah #1",
+    "Pugamuga",
+    ethers.utils.parseEther("0.001")
+  )
+
+  await HookahTxt.wait()
+
+  contractBalance = await hre.ethers.provider.getBalance(hookahContract.address)
 };
+
+
 
 const runMain = async () => {
   try {

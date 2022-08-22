@@ -8,7 +8,9 @@ const main = async () => {
   const hookahContractFactory = await hre.ethers.getContractFactory(
     "HookahPortalContract"
   );
-  const hookahContract = await hookahContractFactory.deploy();
+  const hookahContract = await hookahContractFactory.deploy({
+    value: hre.ethers.utils.parseEther("0.1"),
+  });
 
   console.log("HookahContract address", hookahContract.address);
 };

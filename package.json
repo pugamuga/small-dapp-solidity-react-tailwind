@@ -41,8 +41,10 @@
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.1.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
     "autoprefixer": "^10.4.8",
     "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
     "ethers": "^5.7.0",
     "gh-pages": "^4.0.0",
     "hardhat": "^2.10.2",

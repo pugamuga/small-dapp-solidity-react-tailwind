@@ -23,6 +23,11 @@ const main = async () => {
   await HookahTxt.wait()
 
   contractBalance = await hre.ethers.provider.getBalance(hookahContract.address)
+
+  console.log("Contract balance is:", hre.ethers.utils.formatEther(contractBalance))
+
+  let allHookah = await hookahContract.getAllHookah()
+  console.log(allHookah)
 };
 
 

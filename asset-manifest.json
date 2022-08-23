@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/small-dapp-solidity-react-tailwind/static/css/main.21e40d08.css",
+    "main.js": "/small-dapp-solidity-react-tailwind/static/js/main.6fdf3c6b.js",
+    "index.html": "/small-dapp-solidity-react-tailwind/index.html",
+    "main.21e40d08.css.map": "/small-dapp-solidity-react-tailwind/static/css/main.21e40d08.css.map",
+    "main.6fdf3c6b.js.map": "/small-dapp-solidity-react-tailwind/static/js/main.6fdf3c6b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21e40d08.css",
+    "static/js/main.6fdf3c6b.js"
+  ]
+}

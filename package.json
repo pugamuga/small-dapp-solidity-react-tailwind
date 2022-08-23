@@ -1,5 +1,6 @@
 {
   "name": "default-react-app",
+  "homepage": "https://pugamuga.github.io/small-dapp-solidity-react-tailwind",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
